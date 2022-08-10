@@ -1,0 +1,78 @@
+@import url(base.css);
+ 
+.__filtro-base{
+    width: 1010px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ .__filtro-grupo{
+    padding: 25px 0px;
+    display: block !important;
+}
+
+.__filtro-item{
+    margin: 0 10px;
+    border-radius: 17px !important;
+    font-size: 12px !important;
+
+    font-weight: 400 !important;
+
+    padding: 4px 12px !important;
+}
+
+.__filtro-close{
+    margin-left: 12px;
+    align-items: center;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+.btn-close{
+    opacity: 1 !important;
+    width: 0.7em !important;
+    height: 0.7em !important;
+    
+}
+
+.__filtro-p{
+    margin-right: 12px; 
+    align-self: center; 
+    padding-top: 12px;
+}
+
+@media (min-width: 780px) and (max-width: 992px) {
+    .__filtro-base {
+        margin: 0 32px;
+        width: 1010px;
+        justify-content: center;
+    }
+
+    .__filtro-grupo{
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 780px) {
+    .__filtro-base {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+    .__filtro-grupo{
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .__filtro-p{
+        margin-right: 2px;
+    }
+
+    .__filtro-grupo{
+        padding: 5px 0px;
+    }
+}

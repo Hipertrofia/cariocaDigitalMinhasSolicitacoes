@@ -1,0 +1,112 @@
+@import url(base.css);
+
+
+.__cabecalho {
+    height: 100px;
+    background-image: linear-gradient(to right, rgba(1, 176, 219, 0.8), rgba(9, 183, 140, 0.8));
+
+}
+
+.__cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    height: 100px;
+}
+
+.__painel-login {
+    font-family: museo;
+    color: var(--branco);
+
+
+    height: 20px;
+    padding: 24px 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: solid 1px var(--branco);
+    align-self: center;
+}
+
+.__painel-login p {
+    height: 20px;
+    font-family: museo;
+    font-size: 13.5px;
+    line-height: 20px;
+    text-align: left;
+
+    white-space: nowrap;
+    margin: 0px;
+}
+
+.__nav-titulo {
+    background-color: #ffffff;
+    display: flex;
+    height: 50px;
+    border: solid 1px #c8c6c6;
+}
+
+.__titulo {
+    font-family: museo;
+    font-size: 21px;
+    line-height: 0.95;
+    color: var(--azul-turquesa);
+    padding: 15px;
+    justify-content: flex-start;
+}
+
+.Vector {
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: 40.2px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .__painel-login{
+        margin-top: 32px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+
+    .__painel-login p {
+        height: 20px;
+        font-family: museo;
+        font-size: 13.5px;
+        line-height: 20px;
+        text-align: center;
+        padding: 2px;
+
+        margin: 0px;
+    }
+    
+
+    .__cabecalho {
+        display: flex;
+        flex-direction: column;
+        height: 310px;
+        justify-content: center;
+    }
+
+    .__cabecalho-conteudo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .__painel-logo {
+        min-height: 70px;
+        width: calc(194px + (64px + 64px )) ;
+        padding-left: 63px;
+        padding-right: 63px;
+    }
+}

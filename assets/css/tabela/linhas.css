@@ -1,0 +1,76 @@
+@import url(../base.css);
+@import url(tabela.css);
+
+#modelo {
+    display: none;
+}
+
+.__card-corpo{
+    display: grid;
+    grid-template-columns: 2fr 1fr 4fr 1fr 1fr 2fr;
+    grid-template-rows: minmax(20px, 1fr);
+    grid-template-areas:
+    "nso dso srv org uta sit";
+    align-items: center;
+    justify-items: flex-start;
+    grid-column-gap: 27px;
+    font-size: 13px;
+    padding: 15px 15px !important;
+    border: 1px solid #cccccc !important;
+    align-items: start;
+}
+
+.__card-item-1{
+    grid-area: nso;
+    
+}
+.__card-item-2{
+    grid-area: dso; 
+
+}
+.__card-item-3{
+    grid-area: srv;
+    justify-self: flex-start;
+    
+}
+.__card-item-4{
+    grid-area: org;
+    
+}
+.__card-item-5{
+    grid-area: uta;
+    
+}
+.__card-item-6{
+    grid-area: sit;
+    
+}
+
+@media (max-width: 780px) {
+
+    .__card-item-3{
+        display: none;
+    }
+
+    .__card-item-6{
+        display: none;
+    }
+
+
+    .__card-corpo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "nsoT nso"
+        "dsoT dso"
+        "orgT org"
+        "utaT uta";
+        align-items: start;
+        justify-items: start;
+        row-gap: 15px;
+        padding: 0px !important;
+        border: none !important;
+    }
+
+}
