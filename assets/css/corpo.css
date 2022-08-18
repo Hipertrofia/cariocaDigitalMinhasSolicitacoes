@@ -47,17 +47,21 @@
 }
 
 .__containerDetails{
-
+    font-size: 15px;
     min-height: 753px;
     width: 938px;
     min-width: 310px;
     height: auto;
     background-color: var(--offwhite-fundo);
-    padding: 32px 36px ;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 38, 0.25);
+    padding:  32 14 40 14;
+    box-shadow:none;
     border: solid 1px #ccc;
     background-color: var(--branco);
     margin-top: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+
 }
 #btnMostrarMais{
     border: none;
