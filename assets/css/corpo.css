@@ -48,21 +48,44 @@
 
 .__containerDetails{
     font-size: 15px;
-    min-height: 753px;
-    width: 938px;
+    min-height: 320px;
+    max-width: 938px;
     min-width: 310px;
     height: auto;
     background-color: var(--offwhite-fundo);
-    padding:  32 14 40 14;
+    padding-top:  22px;
+
     box-shadow:none;
     border: solid 1px #ccc;
     background-color: var(--branco);
     margin-top: 20px;
     font-weight: 500;
     line-height: 20px;
-
-
 }
+
+.__formRow{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    overflow: hidden;
+}
+
+.__leftColumnForm{
+    position:relative;
+    width: 204px;
+}
+
+.__rightColumnForm{
+    margin-left: 107px;
+    
+}
+
+#collapseExample{
+    max-width: 599px;
+}
+
 #btnMostrarMais{
     border: none;
     background: none;
@@ -72,24 +95,9 @@
 }
 .__requestDetails{
     position: relative;
-    top:32px;
+    top:22px;
     left: 14px;
 
-}
-
-.__formRow{
-    position:relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.__leftColumnForm{
-    float: left;
-    position:relative;
-}
-
-.__rightColumnForm{
-    padding-left: 325px;
-    position: relative;
 }
 
 #mais{
@@ -112,10 +120,8 @@
 
 .__firstText{
     height: 80px;
-    /* background-image: linear-gradient(#111111, #ffffff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
+    max-width: 599px;
+    border: none;
 } 
 
 .collapse a{
@@ -171,8 +177,8 @@
     border-radius: 50%;     
 }
 .btn-success{
-    background-color: #28a745 !important;
-    border-color: #28a745 !important;
+    background-color: #09b88a !important;
+    border-color: #09b88a !important;
 }
 
 .btn-success:hover {
@@ -205,7 +211,7 @@
 
 .__containerTimeLine{
     
-    width: 938px;
+    max-width: 938px;
     padding: 40px 15px;
 }
 .__containerTimeLine ul{
@@ -225,7 +231,7 @@
 
 
 .__containerTimeLine ul li{
-    height: 84px;
+    height: 60px;
 }
 
 .__iconEStatus{
@@ -237,6 +243,7 @@
 }
 .__timeLineStatus2{
     margin-left: 38px;
+    color: #7b7b7b;
 }
 .__circulo1{
     border: 3px solid #02b0d6;
@@ -314,3 +321,10 @@
 
 }
 
+@media (max-width: 480px){
+
+    .__formRow{
+        display: flex;
+    }
+    
+}
