@@ -70,6 +70,7 @@
     padding-left: 14px;
     padding-right: 14px;
     overflow: hidden;
+    display: flex;
 }
 
 .__leftColumnForm{
@@ -78,9 +79,15 @@
 }
 
 .__rightColumnForm{
-    margin-left: 107px;
-    
+    margin-left: 107px;    
 }
+
+.__firstText{
+    height: 80px;
+    max-width: 599px;
+    border: none;
+    overflow: hidden;
+} 
 
 #collapseExample{
     max-width: 599px;
@@ -93,6 +100,7 @@
     margin-left:200px;
     box-shadow: none;
 }
+
 .__requestDetails{
     position: relative;
     top:22px;
@@ -118,11 +126,7 @@
     display: flex;
 }
 
-.__firstText{
-    height: 80px;
-    max-width: 599px;
-    border: none;
-} 
+
 
 .collapse a{
     border: none;
@@ -210,9 +214,8 @@
 }
 
 .__containerTimeLine{
-    
-    max-width: 938px;
-    padding: 40px 15px;
+    width: 938px;
+    margin-top: 40px;
 }
 .__containerTimeLine ul{
     list-style: none;
@@ -238,11 +241,9 @@
     position: relative;
     left: -9px;
 }
-.__timeLineStatus{
-    margin-left: 30px;
-}
+
 .__timeLineStatus2{
-    margin-left: 38px;
+    margin-left: 8px;
     color: #7b7b7b;
 }
 .__circulo1{
@@ -321,10 +322,36 @@
 
 }
 
-@media (max-width: 480px){
-
+@media screen and (min-width: 0px) and (max-width: 480px) and (orientation: portrait){
+    
+    .__containerDetails{
+        width: 100%;
+    }
     .__formRow{
-        display: flex;
+        display: list-item;
+    }
+    .__rightColumnForm{
+        margin-left: 0;
+    }
+    .__firstText{
+        margin-right: 15px;
+    } 
+    #btnMostrarMais{
+        margin-left: 100px;
+    }
+    #esconde{
+        display: none;
+    }
+    .__statusDiscription{
+        display: none;
+    }
+
+    .__containerTimeLine{
+        width: 100%;
+        
+    }
+    .__containerTimeLine ul li {
+        height: 80px;
     }
     
 }
