@@ -183,6 +183,7 @@
     font-weight: 700;
     line-height: 20px;  
     text-transform: uppercase;
+    border-radius: 3px;
 }
 
 .btn-success:hover {
