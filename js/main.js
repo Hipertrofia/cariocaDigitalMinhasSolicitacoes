@@ -1,14 +1,3 @@
-// REMOVER:
-
-// accordionFlushExample
-// accordionitem
-// flush-headingOne
-// accordionbutton
-// flush-collapseOne
-// accordionbody
-
-
-
 const linha = document.querySelectorAll('[data-linha]')
 
 const aflushD = document.querySelectorAll('[data-acc="aflush"]')
@@ -77,28 +66,12 @@ function myFunction(x) {
   }
 }
 
-
-// function colapsado(){
-  
-//   const texto = document.getElementsByTagName("__firstText")[0];
-
-//   background-image: linear-gradient(#111111, #ffffff);
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   color: transparent;
-// }
-
 var x = window.matchMedia("(min-width: 780px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 window.onresize = function(){ location.reload(); }
 
-
-  //funcionava com 1 item apenas:
-          // element.childNodes[0].parentNode.appendChild(aflush)
-          // aflush.appendChild(aitem)
-          // aitem.appendChild(ahone)
-          // aitem.appendChild(abutton)
-          // aflush.appendChild(acone)
-          // acone.appendChild(abody)
-          // abody.appendChild(cardb)
+function mostrar(){
+  window.document.getElementById('firstText').innerText='Mostrar menos';
+  window.document.getElementById('btnMostrarMais').style.color="black";
+}
