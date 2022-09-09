@@ -84,9 +84,13 @@
     overflow: hidden;
     font-size: 15px;
     font-weight: 500;
+    color: transparent;
     line-height: 20px;
     padding-top: 5px; 
     padding-bottom: 20px;
+    background-image: linear-gradient(#000000,#ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
 
 } 
 
@@ -231,7 +235,7 @@
     content: '';
     position: absolute;
     width: 2px;
-    height: 80%;
+    height: 85%;
     top: 0;
     left: 8;
     background: #02b0d6;
@@ -239,7 +243,8 @@
 
 
 .__containerTimeLine ul li{
-    height: 60px;
+    min-height: 40px;
+    padding-bottom: 20px;
 }
 
 .__iconEStatus{
